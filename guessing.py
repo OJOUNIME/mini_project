@@ -9,8 +9,9 @@ for attempt in range(3):
     if guess == secret_number:
         print("you got it! thats my favourite number!")
         break
-    elif:
-        print("Nope! try again.")
+    elif guess < secret_number:
+        print("Nope! Too low. Try again.")
+    else:
+        print("Nope! Too high. Try again.")
 else:
-    # this only runs if the loop finished WITHOUT hitting break
-    print("Game over! You ran out of tries. The number was 7.")
+    print(f"Game over! You ran out of tries. The number was {secret_number}.")
